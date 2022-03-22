@@ -23,11 +23,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.cirProgressBar.isVisible = true
-
-        binding.webview.settings.javaScriptEnabled = true
-        // no cache
-        binding.webview.settings.cacheMode = LOAD_NO_CACHE
-        //end
+        binding.webview.settings.apply {
+            javaScriptEnabled = true
+            // no cache
+            cacheMode = LOAD_NO_CACHE
+            //end
+        }
         // no cookie
         val cookieManager = CookieManager.getInstance()
         cookieManager.setAcceptCookie(false)
@@ -64,7 +65,10 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         }
-        binding.webview.loadUrl(BuildConfig.BASE_URL)
-
+        var url = BuildConfig.BASE_URL
+        if (!BuildConfig.BASE_URL.startsWith("http")) {
+            url = "https://${BuildConfig.BASE_URL}"
+        }
+        binding.webview.loadUrl(url)
     }
 }
