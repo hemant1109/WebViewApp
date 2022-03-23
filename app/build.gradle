@@ -48,6 +48,59 @@ android {
             buildConfigField "String", "BASE_URL", "\"nummbernewsnine.club\""
           
         }
+        nummbernewseight {
+            dimension 'default'
+            applicationId "com.fairgo.casinos.pokie.online.apps"
+            buildConfigField "String", "BASE_URL", "\"nummbernewseight.club\""
+
+        }
+        nummbernewsseven {
+            dimension 'default'
+            applicationId "com.codere.ten.apuestas.sports.online.apps"
+            buildConfigField "String", "BASE_URL", "\"nummbernewsseven.club\""
+
+        }
+        nummbernewssix {
+            dimension 'default'
+            applicationId "com.codere.apuestas.fame.sports.online.apps"
+            buildConfigField "String", "BASE_URL", "\"nummbernewssix.club\""
+
+        }
+
+        nummbernewsfive {
+            dimension 'default'
+            applicationId "com.codere.apuestas.sports.online.apps"
+            buildConfigField "String", "BASE_URL", "\"nummbernewsfive.club\""
+
+        }
+
+        nummbernewsfour {
+            dimension 'default'
+            applicationId "com.top.ten.casinos.sports.day.online.website"
+            buildConfigField "String", "BASE_URL", "\"nummbernewsfour.club\""
+
+        }
+
+        nummbernewsthree {
+            dimension 'default'
+            applicationId "com.top.ten.casinos.sports.sun.online.website"
+            buildConfigField "String", "BASE_URL", "\"nummbernewsthree.club\""
+
+        }
+
+        nummbernewstwo {
+            dimension 'default'
+            applicationId "com.jackpot.city.casinos.wins.online.apps"
+            buildConfigField "String", "BASE_URL", "\"nummbernewstwo.club\""
+
+        }
+
+        nummbernewsone {
+            dimension 'default'
+            applicationId "com.jackpot.city.slots.cash.online.apps.web"
+            buildConfigField "String", "BASE_URL", "\"nummbernewsone.club\""
+
+        }
     }
 }
 
@@ -61,4 +114,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+/*@casino@123@*/
 }
