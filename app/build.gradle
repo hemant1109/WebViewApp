@@ -101,6 +101,20 @@ android {
             buildConfigField "String", "BASE_URL", "\"nummbernewsone.club\""
 
         }
+
+        sportsofthedayseven {
+            dimension 'default'
+            applicationId "com.top.ten.general.famous.lovely.sports.online.apps"
+            buildConfigField "String", "BASE_URL", "\"sportsofthedayseven.club\""
+
+        }
+
+        sportsofthedayeight {
+            dimension 'default'
+            applicationId "com.top.ten.general.vibration.sports.online.app"
+            buildConfigField "String", "BASE_URL", "\"sportsofthedayeight.club\""
+
+        }
     }
 }
 

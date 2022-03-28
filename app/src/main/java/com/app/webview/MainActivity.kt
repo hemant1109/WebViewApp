@@ -35,20 +35,20 @@ class MainActivity : AppCompatActivity() {
         //end
         binding.webview.webViewClient = object : WebViewClient() {
             override fun onPageStarted(view: WebView?, url: String, favicon: Bitmap?) {
-                Log.e("webViewClientStarted", "webViewClient $url")
+                log("webViewClientStarted","webViewClient $url")
                 binding.cirProgressBar.isVisible = true
             }
 
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
-                Log.e("webViewClientFinishe", "webViewClient $url")
+                log("webViewClientFinishe","webViewClient $url")
                 binding.cirProgressBar.isVisible = false
             }
 
             override fun doUpdateVisitedHistory(view: WebView?, url: String?, isReload: Boolean) {
                 super.doUpdateVisitedHistory(view, url, isReload)
-                Log.e("webViewClienHistory", "webViewClient $url")
-                Log.e("webViewClienHistory", "webViewClient $isReload")
+                log("webViewClienHistory","webViewClient $url")
+                log("webViewClienHistory","webViewClient $url")
                 this@MainActivity.isReload = isReload
             }
 
@@ -60,7 +60,8 @@ class MainActivity : AppCompatActivity() {
                     val browserIntent =
                         Intent(Intent.ACTION_VIEW, Uri.parse(it))
                     startActivity(browserIntent)
-                    Log.e("webViewClient", "webViewClient $it")
+                    log("webViewClient","webViewClient $url")
+
                 }
                 return true
             }
@@ -70,5 +71,10 @@ class MainActivity : AppCompatActivity() {
             url = "https://${BuildConfig.BASE_URL}"
         }
         binding.webview.loadUrl(url)
+    }
+
+    private fun log(tag:String,logMessage: String) {
+        if (BuildConfig.DEBUG)
+            Log.e(tag, logMessage)
     }
 }
