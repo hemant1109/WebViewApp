@@ -115,6 +115,26 @@ android {
             buildConfigField "String", "BASE_URL", "\"sportsofthedayeight.club\""
 
         }
+
+        coinsmomfive {
+            dimension 'default'
+            applicationId "com.snai.casino.slots.less.online.apps.website"
+            buildConfigField "String", "BASE_URL", "\"coinsmomfive.club\""
+
+        }
+        coinsmomfour {
+            dimension 'default'
+            applicationId "com.snai.city.casino.slots.more.online.apps"
+            buildConfigField "String", "BASE_URL", "\"coinsmomfour.club\""
+
+        }
+
+        coinsmomthree {
+            dimension 'default'
+            applicationId "com.snai.italy.casino.slots.hosting.online.apps.website"
+            buildConfigField "String", "BASE_URL", "\"coinsmomthree.club\""
+
+        }
     }
 }
 
