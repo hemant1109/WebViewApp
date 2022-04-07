@@ -135,6 +135,21 @@ android {
             buildConfigField "String", "BASE_URL", "\"coinsmomthree.club\""
 
         }
+
+        absurdnewsfourteen {
+            dimension 'default'
+            applicationId "com.jackpot.city.casino.slots.winner.online.apps"
+            buildConfigField "String", "BASE_URL", "\"absurdnewsfourteen.club\""
+
+        }
+
+        jetthree {
+            dimension 'default'
+            applicationId "com.jackpot.today.casino.shameless.online.apps"
+            buildConfigField "String", "BASE_URL", "\"jetthree.club\""
+
+        }
+
     }
 }
 
