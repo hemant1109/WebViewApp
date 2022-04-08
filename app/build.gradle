@@ -150,6 +150,20 @@ android {
 
         }
 
+        jetfour {
+            dimension 'default'
+            applicationId "com.jackpot.generator.casino.slots.online.apps"
+            buildConfigField "String", "BASE_URL", "\"jetfour.club\""
+
+        }
+
+        jetfive {
+            dimension 'default'
+            applicationId "com.snai.generator.casino.slots.online.apps"
+            buildConfigField "String", "BASE_URL", "\"jetfive.club\""
+
+        }
+
     }
 }
 
