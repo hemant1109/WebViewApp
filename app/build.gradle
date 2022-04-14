@@ -164,6 +164,55 @@ android {
 
         }
 
+        // 14/March/2020
+        godfatherone {
+            dimension 'default'
+            applicationId "com.jackpot.today.casinos.slots.online.mobile"
+            buildConfigField "String", "BASE_URL", "\"godfatherone.club\""
+
+        }
+        godfathertwo {
+            dimension 'default'
+            applicationId "com.goldbet.italy.scommesse.sports.monday.apps"
+            buildConfigField "String", "BASE_URL", "\"godfathertwo.club\""
+
+        }
+
+        godfatherthree {
+            dimension 'default'
+            applicationId "com.leo.vegas.casino.slots.online.monday.mobile"
+            buildConfigField "String", "BASE_URL", "\"godfatherthree.club\""
+
+        }
+
+        godfatherfour {
+            dimension 'default'
+            applicationId "com.monday.apuestas.codere.mobile.app"
+            buildConfigField "String", "BASE_URL", "\"godfatherfour.club\""
+
+        }
+
+        startplayingone {
+            dimension 'default'
+            applicationId "com.snai.italy.scommesse.sports.tuesday.apps"
+            buildConfigField "String", "BASE_URL", "\"startplayingone.xyz\""
+
+        }
+
+        godfathereight {
+            dimension 'default'
+            applicationId "com.top.casino.real.slot.online.monday.mobile"
+            buildConfigField "String", "BASE_URL", "\"godfathereight.club\""
+
+        }
+
+        godfathernine {
+            dimension 'default'
+            applicationId "com.top.casinos.real.slots.online.sure.mobile"
+            buildConfigField "String", "BASE_URL", "\"godfathernine.club\""
+
+        }
+
     }
 }
 
