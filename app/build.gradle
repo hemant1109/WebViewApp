@@ -4,6 +4,20 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/home/iteamandroid/AndroidStudioProjects/Casino/app/src/casino.jks')
+            storePassword '@casino@123@'
+            keyPassword '@casino@123@'
+            keyAlias 'casino'
+        }
+        release {
+            storeFile file('/home/iteamandroid/AndroidStudioProjects/Casino/app/src/casino.jks')
+            storePassword '@casino@123@'
+            keyAlias 'casino'
+            keyPassword '@casino@123@'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -36,7 +50,8 @@ android {
     // Specifies one flavor dimension.
     flavorDimensions 'default'
     productFlavors {
-        nummbernewsten {
+
+        /*nummbernewsten {
             dimension 'default'
             applicationId "com.fairgo.casino.pokie.slots.online.apps"
             buildConfigField "String", "BASE_URL", "\"nummbernewsten.club\""
@@ -164,7 +179,7 @@ android {
 
         }
 
-        // 14/March/2020
+        // 14/March/2022
         godfatherone {
             dimension 'default'
             applicationId "com.jackpot.today.casinos.slots.online.mobile"
@@ -211,6 +226,66 @@ android {
             applicationId "com.top.casinos.real.slots.online.sure.mobile"
             buildConfigField "String", "BASE_URL", "\"godfathernine.club\""
 
+        }*/
+
+        // 18/March/2022
+        partnerseven {
+            dimension 'default'
+            applicationId "com.dafabet.online.youth.mobile.casinos.apps"
+            buildConfigField "String", "BASE_URL", "\"partnerseven.club\""
+            signingConfig signingConfigs.release
+
+        }
+
+        partnereight {
+            dimension 'default'
+            applicationId "com.dafabet.join.leader.casino.monday.apps"
+            buildConfigField "String", "BASE_URL", "\"partnereight.club\""
+            signingConfig signingConfigs.release
+        }
+
+        partnernine {
+            dimension 'default'
+            applicationId "com.dafabet.join.slots.casino.journey.apps"
+            buildConfigField "String", "BASE_URL", "\"partnernine.club\""
+            signingConfig signingConfigs.release
+
+        }
+
+        partnerfour {
+            dimension 'default'
+            applicationId "com.caliente.tool.casino.slots.online.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"partnerfour.club\""
+            signingConfig signingConfigs.release
+        }
+
+        // 18/March/2022 new milestone
+        partnerfive {
+            dimension 'default'
+            applicationId "com.caliente.sport.casino.online.slots.appreciate.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"partnerfive.club\""
+            signingConfig signingConfigs.release
+        }
+
+        partnertwelve {
+            dimension 'default'
+            applicationId "com.mrgreen.casinos.online.win.apps"
+            buildConfigField "String", "BASE_URL", "\"partnertwelve.club\""
+            signingConfig signingConfigs.release
+        }
+
+        partnerthirteen {
+            dimension 'default'
+            applicationId "com.mrgreen.casinos.online.one.apps"
+            buildConfigField "String", "BASE_URL", "\"partnerthirteen.club\""
+            signingConfig signingConfigs.release
+        }
+
+        partnerfourteen {
+            dimension 'default'
+            applicationId "com.mrgreen.casinos.online.today.apps"
+            buildConfigField "String", "BASE_URL", "\"partnerfourteen.club\""
+            signingConfig signingConfigs.release
         }
 
     }
