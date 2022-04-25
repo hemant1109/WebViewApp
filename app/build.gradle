@@ -229,6 +229,7 @@ android {
         }*/
 
         // 18/March/2022
+        /*
         partnerseven {
             dimension 'default'
             applicationId "com.dafabet.online.youth.mobile.casinos.apps"
@@ -259,7 +260,6 @@ android {
             signingConfig signingConfigs.release
         }
 
-        // 18/March/2022 new milestone
         partnerfive {
             dimension 'default'
             applicationId "com.caliente.sport.casino.online.slots.appreciate.apps.mobile"
@@ -285,6 +285,42 @@ android {
             dimension 'default'
             applicationId "com.mrgreen.casinos.online.today.apps"
             buildConfigField "String", "BASE_URL", "\"partnerfourteen.club\""
+            signingConfig signingConfigs.release
+        }*/
+
+        // 25/April/2022 5 apps
+        limonhomosix {
+            dimension 'default'
+            applicationId "com.drueckglueck.control.leaders.slots.casino.apps"
+            buildConfigField "String", "BASE_URL", "\"limonhomosix.club\""
+            signingConfig signingConfigs.release
+        }
+
+        sportivenewsnine {
+            dimension 'default'
+            applicationId "com.melbet.online.casinos.leadership.apps.mobile.webs"
+            buildConfigField "String", "BASE_URL", "\"sportivenewsnine.club\""
+            signingConfig signingConfigs.release
+        }
+
+        sportivenewsten {
+            dimension 'default'
+            applicationId "com.melbet.online.control.apps.mobile.webs"
+            buildConfigField "String", "BASE_URL", "\"sportivenewsten.club\""
+            signingConfig signingConfigs.release
+        }
+
+        homeunone {
+            dimension 'default'
+            applicationId "com.cric.ten.youth.casino.slots.online.apps.web"
+            buildConfigField "String", "BASE_URL", "\"homeunone.xyz\""
+            signingConfig signingConfigs.release
+        }
+
+        homeuntwo {
+            dimension 'default'
+            applicationId "com.cric.ten.control.casino.slots.mobile.apps"
+            buildConfigField "String", "BASE_URL", "\"homeuntwo.xyz\""
             signingConfig signingConfigs.release
         }
 
