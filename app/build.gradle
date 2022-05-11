@@ -63,6 +63,50 @@ android {
             buildConfigField "String", "BASE_URL", "\"gamesnewstwo.xyz\""
             signingConfig signingConfigs.release
         }
+        gamesnewsone {
+            dimension 'default'
+            applicationId "com.spin.casino.motivation.online.leadership.casino.apps"
+            buildConfigField "String", "BASE_URL", "\"gamesnewsone.xyz\""
+            signingConfig signingConfigs.release
+        }
+        galitnewstwelve {
+            dimension 'default'
+            applicationId "com.vulkanvegas.casinos.online.win.apps"
+            buildConfigField "String", "BASE_URL", "\"galitnewstwelve.xyz\""
+            signingConfig signingConfigs.release
+        }
+        galitnewseleven {
+            dimension 'default'
+            applicationId "com.vulkan.vegas.casinos.online.one.apps"
+            buildConfigField "String", "BASE_URL", "\"galitnewseleven.xyz\""
+            signingConfig signingConfigs.release
+        }
+        ermounewstwo {
+            dimension 'default'
+            applicationId "com.betclic.portugal.scommesse.sports.online"
+            buildConfigField "String", "BASE_URL", "\"ermounewstwo.xyz\""
+            signingConfig signingConfigs.release
+        }
+        ermounewsfive {
+            dimension 'default'
+            applicationId "com.betsson.goods.join.mobile.online.apps"
+            buildConfigField "String", "BASE_URL", "\"ermounewsfive.xyz\""
+            signingConfig signingConfigs.release
+        }
+        gamesnewsfour {
+            dimension 'default'
+            applicationId "com.fairgo.casino.games.apps.online.webs"
+            buildConfigField "String", "BASE_URL", "\"gamesnewsfour.xyz\""
+            signingConfig signingConfigs.release
+        }
+        ermounewseight {
+            dimension 'default'
+            applicationId "com.four.rabet.sport.fun.website.apps"
+            buildConfigField "String", "BASE_URL", "\"ermounewseight.xyz\""
+            signingConfig signingConfigs.release
+        }
+
+
         /*nummbernewsten {
             dimension 'default'
             applicationId "com.fairgo.casino.pokie.slots.online.apps"
