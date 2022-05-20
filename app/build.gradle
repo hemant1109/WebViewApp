@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
+def codeName =""
 android {
     signingConfigs {
         debug {
@@ -50,6 +50,55 @@ android {
     // Specifies one flavor dimension.
     flavorDimensions 'default'
     productFlavors {
+        // 20/May/2022 6 apps
+        anatnewsfive {
+            dimension 'default'
+            applicationId "com.fairgo.season.slots.online.website.apps"
+            buildConfigField "String", "BASE_URL", "\"anatnewsfive.xyz\""
+            signingConfig signingConfigs.release
+            codeName="frg40"
+        }
+        anatnewsnine {
+            dimension 'default'
+            applicationId "com.top.opinion.issue.online.rising.mobile.apps"
+            buildConfigField "String", "BASE_URL", "\"anatnewsnine.xyz\""
+            signingConfig signingConfigs.release
+            codeName="top57"
+
+        }
+        anatnewsten {
+            dimension 'default'
+            applicationId "com.top.clarity.option.online.create.mobile.apps"
+            buildConfigField "String", "BASE_URL", "\"anatnewsten.xyz\""
+            signingConfig signingConfigs.release
+            codeName="top58"
+
+        }
+        adlernewstwo {
+            dimension 'default'
+            applicationId "com.triple.eight.avtivity.apps.online.webs"
+            buildConfigField "String", "BASE_URL", "\"adlernewstwo.xyz\""
+            signingConfig signingConfigs.release
+            codeName="trp56"
+
+        }
+        adlernewsthree {
+            dimension 'default'
+            applicationId "com.triple.eight.program.apps.online.webs"
+            buildConfigField "String", "BASE_URL", "\"adlernewsthree.xyz\""
+            signingConfig signingConfigs.release
+            codeName="trp57"
+
+        }
+        adlernewsseven {
+            dimension 'default'
+            applicationId "com.codere.apuestas.deportivas.sure.mobile.app"
+            buildConfigField "String", "BASE_URL", "\"adlernewsseven.xyz\""
+            signingConfig signingConfigs.release
+            codeName="cod44"
+
+        }
+        /*
         // 11/May/2022 9 apps
         gamesnewsthree {
             dimension 'default'
@@ -104,7 +153,7 @@ android {
             applicationId "com.four.rabet.sport.fun.website.apps"
             buildConfigField "String", "BASE_URL", "\"ermounewseight.xyz\""
             signingConfig signingConfigs.release
-        }
+        }*/
 
 
         /*nummbernewsten {
@@ -379,6 +428,13 @@ android {
             buildConfigField "String", "BASE_URL", "\"homeuntwo.xyz\""
             signingConfig signingConfigs.release
         }*/
+    }
+    applicationVariants.all { variant ->
+        project.logger.lifecycle("${variant.outputs}")
+
+        variant.outputs.all {
+            outputFileName = "${variant.getFlavorName()}-${codeName}-${variant.buildType.name}.apk"
+        }
     }
 }
 
