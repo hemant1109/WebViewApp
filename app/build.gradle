@@ -97,9 +97,10 @@ android {
             codeName="trp57"
 
         }
+        // 30/May/2022 1 applicationId updated
         adlernewsseven {
             dimension 'default'
-            applicationId "com.codere.apuestas.deportivas.sure.mobile.app"
+            applicationId "com.codere.apuestas.deportivas.madrid.mobile.app"
             buildConfigField "String", "BASE_URL", "\"adlernewsseven.xyz\""
             signingConfig signingConfigs.release
             codeName="cod44"
