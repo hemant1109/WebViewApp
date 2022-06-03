@@ -1,12 +1,7 @@
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
-//def codeName = ""
 
 android {
     signingConfigs {
@@ -73,9 +68,10 @@ android {
             codeName="top57"
 
         }
+        // 3/June/2022 1 app's applicationId updated
         anatnewsten {
             dimension 'default'
-            applicationId "com.top.clarity.option.online.create.mobile.apps"
+            applicationId "com.top.feedback.option.online.create.mobile.apps"
             buildConfigField "String", "BASE_URL", "\"anatnewsten.xyz\""
             signingConfig signingConfigs.release
             codeName="top58"
@@ -97,7 +93,7 @@ android {
             codeName="trp57"
 
         }
-        // 30/May/2022 1 applicationId updated
+        // 30/May/2022 1 app's applicationId updated
         adlernewsseven {
             dimension 'default'
             applicationId "com.codere.apuestas.deportivas.madrid.mobile.app"
@@ -451,9 +447,9 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
