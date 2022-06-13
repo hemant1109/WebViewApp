@@ -30,6 +30,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            debuggable true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -52,56 +55,128 @@ android {
     // Specifies one flavor dimension.
     flavorDimensions 'default'
     productFlavors {
-        // 20/May/2022 6 apps
-        anatnewsfive {
+        //13/06/2020 10 apps
+        saharewstwelve {
             dimension 'default'
-            applicationId "com.fairgo.season.slots.online.website.apps"
-            buildConfigField "String", "BASE_URL", "\"anatnewsfive.xyz\""
+            applicationId "com.pixbmosesarticlestenet.websites.athletics.apps.online"
+            buildConfigField "String", "BASE_URL", "\"saharewstwelve.xyz\""
             signingConfig signingConfigs.release
-            codeName="frg40"
+            codeName = "pix1"
         }
-        anatnewsnine {
+        saharewsone {
             dimension 'default'
-            applicationId "com.top.opinion.issue.online.rising.mobile.apps"
-            buildConfigField "String", "BASE_URL", "\"anatnewsnine.xyz\""
+            applicationId "com.betano.kill.story.slots.apps.online.mobile"
+            buildConfigField "String", "BASE_URL", "\"saharewsone.xyz\""
             signingConfig signingConfigs.release
-            codeName="top57"
+            codeName = "btn27"
+        }
+        vakninewstwelve {
+            dimension 'default'
+            applicationId "com.rushbet.casinos.multiplayer.online.apps"
+            buildConfigField "String", "BASE_URL", "\"vakninewstwelve.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "rus14"
+        }
+        mosesarticleseleven {
+            dimension 'default'
+            applicationId "com.rushbet.casinos.multiplayer.online.apps"
+            buildConfigField "String", "BASE_URL", "\"mosesarticleseleven.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "top59"
+        }
+        mosesarticlesten {
+            dimension 'default'
+            applicationId "com.top.ten.list.cartoon.slots.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"mosesarticlesten.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "top60"
+        }
+        mosesarticlesnine {
+            dimension 'default'
+            applicationId "com.top.ten.different.online.match.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"mosesarticlesnine.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "top61"
+        }
+        vakninewseight {
+            dimension 'default'
+            applicationId "com.spin.casino.different.online.match.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"vakninewseight.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "spc3"
+        }
+        vakninewsseven {
+            dimension 'default'
+            applicationId "com.spin.casino.list.online.multiplayer.apps.mobile"
+            buildConfigField "String", "BASE_URL", "\"vakninewsseven.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "spc4"
+        }
+        vakninewssix {
+            dimension 'default'
+            applicationId "com.wunderino.multiplayer.slots.online.apps"
+            buildConfigField "String", "BASE_URL", "\"vakninewssix.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "wnd29"
+        }
+        vakninewsfive {
+            dimension 'default'
+            applicationId "com.wunderino.different.casinos.slots.online.apps"
+            buildConfigField "String", "BASE_URL", "\"vakninewsfive.xyz\""
+            signingConfig signingConfigs.release
+            codeName = "wnd30"
+        }
 
-        }
-        // 3/June/2022 1 app's applicationId updated
-        anatnewsten {
-            dimension 'default'
-            applicationId "com.top.feedback.option.online.create.mobile.apps"
-            buildConfigField "String", "BASE_URL", "\"anatnewsten.xyz\""
-            signingConfig signingConfigs.release
-            codeName="top58"
+        /* // 20/May/2022 6 apps
+         anatnewsfive {
+             dimension 'default'
+             applicationId "com.fairgo.season.slots.online.website.apps"
+             buildConfigField "String", "BASE_URL", "\"anatnewsfive.xyz\""
+             signingConfig signingConfigs.release
+             codeName="frg40"
+         }
+         anatnewsnine {
+             dimension 'default'
+             applicationId "com.top.opinion.issue.online.rising.mobile.apps"
+             buildConfigField "String", "BASE_URL", "\"anatnewsnine.xyz\""
+             signingConfig signingConfigs.release
+             codeName="top57"
 
-        }
-        adlernewstwo {
-            dimension 'default'
-            applicationId "com.triple.eight.avtivity.apps.online.webs"
-            buildConfigField "String", "BASE_URL", "\"adlernewstwo.xyz\""
-            signingConfig signingConfigs.release
-            codeName="trp56"
+         }
+         // 3/June/2022 1 app's applicationId updated
+         anatnewsten {
+             dimension 'default'
+             applicationId "com.top.feedback.option.online.create.mobile.apps"
+             buildConfigField "String", "BASE_URL", "\"anatnewsten.xyz\""
+             signingConfig signingConfigs.release
+             codeName="top58"
 
-        }
-        adlernewsthree {
-            dimension 'default'
-            applicationId "com.triple.eight.program.apps.online.webs"
-            buildConfigField "String", "BASE_URL", "\"adlernewsthree.xyz\""
-            signingConfig signingConfigs.release
-            codeName="trp57"
+         }
+         adlernewstwo {
+             dimension 'default'
+             applicationId "com.triple.eight.avtivity.apps.online.webs"
+             buildConfigField "String", "BASE_URL", "\"adlernewstwo.xyz\""
+             signingConfig signingConfigs.release
+             codeName="trp56"
 
-        }
-        // 30/May/2022 1 app's applicationId updated
-        adlernewsseven {
-            dimension 'default'
-            applicationId "com.codere.apuestas.deportivas.madrid.mobile.app"
-            buildConfigField "String", "BASE_URL", "\"adlernewsseven.xyz\""
-            signingConfig signingConfigs.release
-            codeName="cod44"
+         }
+         adlernewsthree {
+             dimension 'default'
+             applicationId "com.triple.eight.program.apps.online.webs"
+             buildConfigField "String", "BASE_URL", "\"adlernewsthree.xyz\""
+             signingConfig signingConfigs.release
+             codeName="trp57"
 
-        }
+         }
+         // 30/May/2022 1 app's applicationId updated
+         adlernewsseven {
+             dimension 'default'
+             applicationId "com.codere.apuestas.deportivas.madrid.mobile.app"
+             buildConfigField "String", "BASE_URL", "\"adlernewsseven.xyz\""
+             signingConfig signingConfigs.release
+             codeName="cod44"
+
+         }*/
         /*
         // 11/May/2022 9 apps
         gamesnewsthree {
@@ -437,9 +512,11 @@ android {
     }
 
     applicationVariants.all { variant ->
-        variant.outputs.all {
-            //project.logger.lifecycle("${variant.productFlavors*.codeName[0]}")
-            outputFileName = "${variant.getFlavorName()}-${variant.productFlavors*.codeName[0]}-${variant.buildType.name}.apk"
+        if (variant.buildType.name == "release") {
+            variant.outputs.all {
+                //project.logger.lifecycle("${variant.productFlavors*.codeName[0]}")
+                outputFileName = "${variant.getFlavorName()}-${variant.productFlavors*.codeName[0]}-${variant.buildType.name}.apk"
+            }
         }
     }
 }
